@@ -12,10 +12,10 @@ namespace DataLibrary.DataAccess
 {
     public static class SQLDataAccess
     {
-        public static string GetConnectionString(string connectionName = "MVCDemoDB")
+        public static string GetConnectionString(string connectionName = "LibraryDB")
         {
            
-            return ConfigurationManager.ConnectionStrings["MVCDemoDB"].ConnectionString;
+            return ConfigurationManager.ConnectionStrings["LibraryDB"].ConnectionString;
         }
 
         public static List<T> LoadData<T>(string sql)
